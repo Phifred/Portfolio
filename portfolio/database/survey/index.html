@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant Survey</title>
+    <meta name="description" content="Survey Tech Assessment">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Phillip Fredieu">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form id="survey" onsubmit="return false">
+            <h1>Restaurant Survey</h1>
+
+            <label class="formlabel" for="DateVisited">Date Visited:</label>
+            <input type="date" id="DateVisited" name="DateVisited" size="10" maxlength="10" data-rule-required="true" data-msg-required="Date is Required">
+            <label for="DateVisited" class="error"></label>
+            <br/>
+            <label for="DineInTakeOut" class="formlabel">Dine In / Take Out: </label>
+            <label for="DineIn">
+            <input type="radio" id="DineIn" name="DineInTakeOut" value="D"
+            data-rule-required="true"  data-msg-required="Dining type is Required" /> Dine In
+            </label>
+            <label for="TakeOut">
+            <input type="radio" id="TakeOut" name="DineInTakeOut" value="T"/> Take Out
+            </label>
+            <label for="DineInTakeOut" class="error"></label>
+            <br/>
+            <label class="formlabel" for="FoodQuality">Food Quality:</label>
+            <label for="FoodQualityExcellent"> 
+              <input type="radio" id="FoodQualityExcellent" name="FoodQualityExcellent" value="4" /> Excellent
+            </label>
+            <label for="FoodQualityGood"> 
+              <input type="radio" id="FoodQualityGood" name="FoodQualityGood" value="3"/> Good
+            </label>
+            <label for="FoodQualityAverage"> 
+              <input type="radio" id="FoodQualityAverage" name="FoodQualityAverage" value="2"/> Average
+            </label>
+            <label for="FoodQualityDisatisfied"> 
+              <input type="radio" id="FoodQualityDisatisfied" name="FoodQualityDisatisfied" value="1"/> Disatisfied
+            </label>
+            <br />
+            <label class="formlabel" for="ServiceQuality">Service Quality:</label>
+            <label for="ServiceQualityExcellent"> 
+  <input type="radio" id="ServiceQualityExcellent" name="ServiceQualityExcellent" value="4"/> Excellent
+</label>
+            <label for="ServiceQualityGood"> 
+  <input type="radio" id="ServiceQualityGood" name="ServiceQualityGood" value="3"/> Good
+</label>
+            <label for="ServiceQualityAverage"> 
+  <input type="radio" id="ServiceQualityAverage" name="ServiceQualityAverage" value="2"/> Average
+</label>
+            <label for="ServiceQualityDisatisfied"> 
+  <input type="radio" id="ServiceQualityDisatisfied" name="ServiceQualityDisatisfied" value="1"/> Disatisfied
+</label>
+            <br/>
+            <label class="formlabel" for="OrderAccuracy">Order Accuracy:</label>
+            <label for="OrderAccuracyExcellent"> 
+  <input type="radio" id="OrderAccuracyExcellent" name="OrderAccuracyExcellent" value="4"/> Excellent
+</label>
+            <label for="OrderAccuracyGood"> 
+  <input type="radio" id="OrderAccuracyGood" name="OrderAccuracyGood" value="3"/> Good
+</label>
+            <label for="OrderAccuracyAverage"> 
+  <input type="radio" id="OrderAccuracyAverage" name="OrderAccuracyAverage" value="2"/> Average
+</label>
+            <label for="OrderAccuracyDisatisfied"> 
+  <input type="radio" id="OrderAccuracyDisatisfied" name="OrderAccuracyDisatisfied" value="1"/> Disatisfied
+</label>
+            <br/>
+            <label class="formlabel" for="SpeedOfService">Speed Of Service:</label>
+            <label for="SpeedOfServiceExcellent"> 
+  <input type="radio" id="SpeedOfServiceExcellent" name="SpeedOfServiceExcellent" value="4"/> Excellent
+</label>
+            <label for="SpeedOfServiceGood"> 
+  <input type="radio" id="SpeedOfServiceGood" name="SpeedOfServiceGood" value="3"/> Good
+</label>
+            <label for="SpeedOfServiceAverage"> 
+  <input type="radio" id="SpeedOfServiceAverage" name="SpeedOfServiceAverage" value="2"/> Average
+</label>
+            <label for="SpeedOfServiceDisatisfied"> 
+  <input type="radio" id="SpeedOfServiceDisatisfied" name="SpeedOfServiceDisatisfied" value="1"/> Disatisfied
+</label>
+            <br/>
+            <label class="formlabel" for="Value">Value:</label>
+            <label for="ValueExcellent"> 
+  <input type="radio" id="ValueExcellent" name="ValueExcellent" value="4"/> Excellent
+</label>
+            <label for="ValueGood"> 
+  <input type="radio" id="ValueGood" name="ValueGood" value="3"/> Good
+</label>
+            <label for="ValueAverage"> 
+  <input type="radio" id="ValueAverage" name="ValueAverage" value="2"/> Average
+</label>
+            <label for="ValueDisatisfied"> 
+  <input type="radio" id="ValueDisatisfied" name="ValueDisatisfied" value="1"/> Disatisfied
+</label>
+            <br/>
+            <label class="formlabel" for="OverallExperience">Overall Experience:</label>
+            <label for="OverallExperience"> 
+  <input type="radio" id="OverallExperienceExcellent" name="OverallExperienceGood" value="4"/> Excellent
+</label>
+            <label for="OverallExperienceGood"> 
+  <input type="radio" id="OverallExperienceGood" name="OverallExperienceGood" value="3"/> Good
+</label>
+            <label for="OverallExperienceAverage"> 
+  <input type="radio" id="OverallExperienceAverage" name="OverallExperienceAverage" value="2"/> Average
+</label>
+            <label for="OverallExperienceDisatisfied"> 
+  <input type="radio" id="OverallExperienceDisatisfied" name="OverallExperienceDisatisfied" value="1"/> Disatisfied
+</label>
+            <br/>
+            <label class="formlabel">Comments, Questions or Suggestions: </label>
+            <textarea id="Comments" name="Comments" rows="3" cols="30"></textarea>
+            <br/>
+            <label class="formlabel" for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" size="27" maxlength="27">
+            <br/>
+            <label class="formlabel">Age:</label>
+            <select name="Age" id="Age">
+   
+   <option value="<13">&lt;13</option>
+    <option value="13-17">13-17</option>
+     <option value="18-24">18-24</option>
+      <option value="25-34">25-34</option>
+       <option value="35-44">35-44</option>
+        <option value="45-54">45-54</option>
+         <option value="45-54">&gt;54</option>
+       </select>
+
+            <label for="Age" class="error"></label>
+            <br/>
+            <label class="formlabel" for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" size="27" maxlength="27">
+            <br/>
+            <input type="submit" value="Submit" onclick="CreateResponse()">
+        </form>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+    </div>
+</body>
+
+</html>
