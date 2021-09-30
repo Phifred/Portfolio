@@ -47,7 +47,7 @@ a:visited {
 
 nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   padding: 20px 20px 0px 20px;
 }
 
@@ -72,7 +72,7 @@ nav a:hover {
 
 nav.secondary{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   padding: 20px 20px 0px 20px;
 }
 
@@ -253,6 +253,21 @@ footer {
     border:1px solid white;
     overflow:auto;
 }
+
+/*Graphic Design Example Grid*/
+
+.long-image{
+grid-area: long
+}
+
+.design-example-grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-template-rows: auto;
+grid-template-areas:
+  "long long long"
+} 
 
 
 /* Reorder Source Using Grid */
