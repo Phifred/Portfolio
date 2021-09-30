@@ -260,6 +260,18 @@ footer {
 grid-area: long
 }
 
+.grid-img-left{
+grid-area: img-left
+}
+
+.grid-img-mid{
+grid-area: img-mid
+}
+
+.grid-img-right{
+grid-area: img-right
+}
+
 .design-example-grid{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -267,6 +279,7 @@ grid-column-gap: 10px;
 grid-template-rows: auto;
 grid-template-areas:
   "long long long"
+  "img-left img-mid img-right"
 } 
 
 
