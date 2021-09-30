@@ -277,6 +277,7 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-column-gap: 10px;
 grid-template-rows: auto;
+grid-row-gap: 10px; 
 grid-template-areas:
   "long long long"
   "img-left img-mid img-right"
